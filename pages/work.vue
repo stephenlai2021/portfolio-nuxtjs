@@ -18,7 +18,7 @@
 // what is wrong with this fetch ???
 export default {
   async asyncData({ $axios }) {
-    const work = await $axios.$get(`/work.json`)
+    const work = await $axios.$get(process.env.baseURL + '/work.json')
     console.log(work)
     return { work }
   },
