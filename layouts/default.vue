@@ -34,6 +34,7 @@
   --fb-yellow: #ffca28;
   --mongo-green: #4fc08d;
   --bgColor: var(--light-100);
+  --bg-input: #d5d5d6;
 }
 
 [data-theme="dark"] {
@@ -45,6 +46,7 @@
   --light-700: #cecece;
   --light-900: #cecece;
   --bgColor: #2c3e50;
+  --bg-input: #e9e6f5;
 }
 
 *,

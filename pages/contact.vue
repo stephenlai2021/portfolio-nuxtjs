@@ -102,7 +102,8 @@ textarea {
 }
 .common {
   border: 1px solid #ccc;
-  background: #e8f0fe;
+  /* background: #e8f0fe; */
+  background: var(--bg-input);
   font-weight: 300;
   font-size: 20px;
 }

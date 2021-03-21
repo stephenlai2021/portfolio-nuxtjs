@@ -5,11 +5,11 @@
       {{ $t('workSubtitle') }}
     </h2>
     <div class="project-container">
-      <!-- <div class="project" v-for="item in work" :key="item.id">
+      <div class="project" v-for="item in work" :key="item.id">
         <img class="project-image" :src="item.image" alt="work image" />
         <h3 class="project-title">{{ item.title }}</h3>
-      </div> -->
-      <h1 class="content">{{ $t('workTitle') }}</h1>
+      </div>
+      <!-- <h1 class="content">{{ $t('workTitle') }}</h1> -->
     </div>
   </div>
 </template>
@@ -17,8 +17,8 @@
 <script>
 // what is wrong with this fetch ???
 export default {
-  async asyncData({ $axios }) {
-    const work = await $axios.$get(`/work.json`)
+  async asyncData(context) {
+    const work = await context.$axios.$get(`/work.json`)
     console.log(work)
     return { work }
   },

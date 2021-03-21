@@ -51,6 +51,10 @@ select {
 @media (max-width: 992px) {
   select {
     font-size: 16px;
+    /* background: var(--light-100); */
+    background: var(--bg-input);
+    color: #707070;
+    font-weight: 500;
   }
 }
 </style>
