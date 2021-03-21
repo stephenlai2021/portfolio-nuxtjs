@@ -20,7 +20,7 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxt/content',
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
   ],
 
   buildModules: ['@nuxt/image'],
@@ -29,5 +29,12 @@ export default {
     manifest: {
       lang: 'en',
     },
+  },
+
+  env: {
+    baseURL:
+      process.env.NODE_ENV === 'production'
+        ? 'https://stephenlai-portfolio.netlify.app/'
+        : 'http://localhost:3000',
   },
 }

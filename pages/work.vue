@@ -17,12 +17,10 @@
 <script>
 // what is wrong with this fetch ???
 export default {
-  async asyncData(context) {
-    // const work = await context.$axios.$get(`/work.json`)
-    // console.log(work)
-    const res = await fetch('/work.json')
-    const data = await res.json()
-    return { work: data }
+  async asyncData({ $axios }) {
+    const work = await $axios.$get(`/work.json`)
+    console.log(work)
+    return { work }
   },
   created() {
     this.$store.commit('showHomePage', false)
