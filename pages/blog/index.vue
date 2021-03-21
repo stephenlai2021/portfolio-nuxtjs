@@ -20,7 +20,7 @@ export default {
     return { posts }
   },
   created() {
-    this.$store.commit('showHomePage', false)
+    // this.$store.commit('showHomePage', false)
   },
 }
 </script>

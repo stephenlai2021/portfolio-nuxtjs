@@ -23,7 +23,7 @@ export default {
     return { work }
   },
   created() {
-    this.$store.commit('showHomePage', false)
+    // this.$store.commit('showHomePage', false)
   },
 }
 </script>

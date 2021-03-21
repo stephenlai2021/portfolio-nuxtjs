@@ -19,6 +19,7 @@
 
 <script>
 export default {
+  layout: 'home',
   async asyncData({ $content }) {
     const posts = await $content('posts').fetch()
 
