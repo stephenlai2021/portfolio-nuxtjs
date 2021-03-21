@@ -1,19 +1,5 @@
 <template>
   <div class="foot">
-    <!-- <b-container>
-      <b-row>
-        <b-col>
-          <div class="box">
-            <p class="text">&copy; {{ $t('footMessage1') }}</p>
-            <p class="text">
-              <a href="https://nuxtjs.org/">
-                {{ $t('footMessage2') }}
-              </a>
-            </p>
-          </div>
-        </b-col>
-      </b-row>
-    </b-container> -->
     <div class="container">
       <div class="row">
         <div class="col">

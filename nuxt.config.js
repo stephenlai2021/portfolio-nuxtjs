@@ -13,10 +13,14 @@ export default {
 
   components: true,
 
+  css: [
+    '~assets/bootstrap.css'
+  ],
+
   plugins: ['~/plugins/i18n.js', '~/plugins/disqus.js'],
 
   modules: [
-    'bootstrap-vue/nuxt',
+    // 'bootstrap-vue/nuxt',
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxt/content',
