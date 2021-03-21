@@ -6,8 +6,8 @@
         <span class="title-1">VueJS,</span>
         <span class="title-2">ReactJS,</span>
         <span class="title-3">NodeJS,</span>
-        <span class="title-4">Firebase,</span>
-        <span class="title-5">MongoDB</span>
+        <span class="title-4">Serverless,</span>
+        <span class="title-5">Database</span>
       </h2>
       <button class="btn-work" @click="$router.push('/work')">
         {{ $t('heroBtnWork') }}

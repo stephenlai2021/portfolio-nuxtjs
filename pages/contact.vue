@@ -57,10 +57,7 @@ export default {
       this.email = ''
       this.message = ''
     },
-  },
-  created() {
-    // this.$store.commit('showHomePage', false)
-  },
+  }
 }
 </script>
 

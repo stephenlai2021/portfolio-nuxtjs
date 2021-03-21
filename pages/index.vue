@@ -24,14 +24,6 @@ export default {
     const posts = await $content('posts').fetch()
 
     return { posts }
-  },
-  created() {
-    this.$store.commit('showHomePage', true)
-  },
-  computed: {
-    truncatedDesc() {
-      return 
-    }
   }
 }
 </script>

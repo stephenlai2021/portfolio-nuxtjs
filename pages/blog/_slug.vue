@@ -35,10 +35,7 @@ export default {
     const post = await $content('posts', params.slug).fetch()
 
     return { post }
-  },
-  created() {
-    // this.$store.commit('showHomePage', false)
-  },
+  }
 }
 </script>
 

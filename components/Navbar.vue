@@ -1,8 +1,8 @@
 <template>
   <div class="main-header">
-    <b-container>
-      <b-row>
-        <b-col cols="12" class="navbar">
+    <div class="container">
+      <div class="row">
+        <div class="col navbar">
           <NuxtLink to="/">
             <div class="logo">{{ $t('title') }}</div>
           </NuxtLink>
@@ -26,9 +26,9 @@
           <transition>
             <Dropdown v-if="$store.state.isToggle" />
           </transition>
-        </b-col>
-      </b-row>
-    </b-container>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 

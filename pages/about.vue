@@ -13,14 +13,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  created() {
-    // this.$store.commit('showHomePage', false)
-  },
-}
-</script>
-
 <style scoped>
 .page-title {
   font-size: 18px;

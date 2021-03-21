@@ -21,10 +21,7 @@ export default {
     const work = await $axios.$get(process.env.baseURL + '/work.json')
     console.log(work)
     return { work }
-  },
-  created() {
-    // this.$store.commit('showHomePage', false)
-  },
+  }
 }
 </script>
 

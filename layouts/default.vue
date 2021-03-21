@@ -1,17 +1,16 @@
 <template>
   <div>
     <Navbar />
-    <!-- <Hero v-if="$store.state.homePage" /> -->
-    <b-container>
-      <b-row class="wrapper">
-        <b-col lg="3" md="12" class="col-left">
+    <div class="container">
+      <div class="row wrapper">
+        <div class="col-lg-3 col-md-12 col-left">
           <Sidebar />
-        </b-col>
-        <b-col lg="9" md="12" class="content">
+        </div>
+        <div class="col-lg-9 col-md-12 content">
           <Nuxt />
-        </b-col>
-      </b-row>
-    </b-container>
+        </div>
+      </div>
+    </div>
     <Foot />
   </div>
 </template>
