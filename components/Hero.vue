@@ -1,5 +1,5 @@
 <template>
-  <div class="hero">
+  <div class="hero" v-if="$store.state.homePage">
     <div class="container">
       <h1>{{ $t('subtitle') }}</h1>
       <h2 class="skills">

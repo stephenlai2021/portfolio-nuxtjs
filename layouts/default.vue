@@ -2,7 +2,8 @@
   <!-- <div @click.capture="$store.commit('closeDropdown')"> -->
   <div>
     <Navbar />
-    <Hero v-if="$store.state.homePage" />
+    <!-- <Hero v-if="$store.state.homePage" /> -->
+    <Hero />
     <b-container>
       <b-row class="wrapper">
         <b-col lg="3" md="12" class="col-left">

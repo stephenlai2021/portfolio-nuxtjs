@@ -1,5 +1,5 @@
 export const state = {
-  homePage: false,
+  homePage: true,
   lang: 'en',
   isToggle: false
 }
