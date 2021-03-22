@@ -33,6 +33,7 @@
   font-weight: 300;
   color: var(--light-900);
   margin-bottom: 28px;
+  line-height: 1.5;
 }
 @media (max-width: 768px) {
   .section-title {

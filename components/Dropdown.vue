@@ -4,6 +4,7 @@
     <NuxtLink to="/blog">{{ $t('navbarBlog') }}</NuxtLink>
     <NuxtLink to="/about">{{ $t('navbarAbout') }}</NuxtLink>
     <NuxtLink to="/work">{{ $t('navbarWork') }}</NuxtLink>
+    <NuxtLink to="/contact">{{ $t('navbarContact') }}</NuxtLink>
     <LangSwitcher />
     <div class="switch">
       <ModeSwitcher />
