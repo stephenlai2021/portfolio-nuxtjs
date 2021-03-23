@@ -28,8 +28,8 @@ export default {
     }
   },
   async asyncData({ $axios }) {
-    // const work = await $axios.$get(process.env.baseURL + '/work.json')
-    const work = await $axios.$get(process.env.baseURL + '/api')
+    const work = await $axios.$get(process.env.baseURL + '/work.json')
+    // const work = await $axios.$get(process.env.baseURL + '/api')
     // const work = await $axios.$get('/api')
     console.log(work)
     return { work }
