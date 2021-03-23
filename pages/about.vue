@@ -13,6 +13,22 @@
   </div>
 </template>
 
+<script>
+export default {
+  head() {
+    return {
+      title: this.$i18n.t('aboutHead'),
+      meta: [
+        {
+          name: '',
+          content: '',
+        },
+      ],
+    }
+  },
+}
+</script>
+
 <style scoped>
 .page-title {
   font-size: 18px;

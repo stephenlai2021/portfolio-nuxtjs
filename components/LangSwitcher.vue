@@ -52,7 +52,7 @@ select {
   select {
     font-size: 16px;
     /* background: var(--light-100); */
-    background: var(--bg-input);
+    background: var(--dropdown);
     color: #707070;
     font-weight: 500;
   }

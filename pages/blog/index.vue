@@ -1,7 +1,8 @@
 <template>
   <div class="blog-page">
-    <h2 class="page-title">Blog</h2>
-    <h2 class="section-title">Latest articles on web development</h2>
+    <h2 class="page-title">{{ $t('blogHead') }}</h2>
+    <!-- <h2 class="section-title">Latest articles on web development</h2> -->
+    <h2 class="section-title">{{ $t('blogSectionTitle') }}</h2>
     <div class="post" v-for="post in posts" :key="post.title">
       <NuxtLink :to="`/blog/${post.slug}`">
         <h1 class="post-title">{{ post.title }}</h1>
@@ -14,6 +15,18 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: this.$i18n.t('blogHead'),
+      meta: [
+        {
+          name: '',
+          content: ''
+        }
+      ]
+
+    }
+  },
   async asyncData({ $content }) {
     const posts = await $content('posts').fetch()
 
@@ -64,7 +77,8 @@ a {
   transition: all 0.25s ease-in-out;
 }
 a .post-title:hover {
-  color: green;
+  color: var(--blog-title);
+  text-decoration: underline;
 }
 @media (max-width: 768px) {
   .section-title {

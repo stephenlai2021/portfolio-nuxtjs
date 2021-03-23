@@ -38,6 +38,18 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: this.$i18n.t('contactHead'),
+      meta: [
+        {
+          name: '',
+          content: ''
+        }
+      ]
+
+    }
+  },
   data() {
     return {
       name: '',
@@ -151,6 +163,9 @@ button:hover {
   }
   label {
     font-size: 16px;
+  }
+  input {
+    height: 40px;
   }
 }
 </style>

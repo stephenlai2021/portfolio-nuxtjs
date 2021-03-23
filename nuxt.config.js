@@ -13,19 +13,11 @@ export default {
 
   components: true,
 
-  css: [
-    '~assets/bootstrap.css'
-  ],
+  css: ['~assets/global.css'],
 
   plugins: ['~/plugins/i18n.js', '~/plugins/disqus.js'],
 
-  modules: [
-    // 'bootstrap-vue/nuxt',
-    '@nuxtjs/axios',
-    '@nuxtjs/pwa',
-    '@nuxt/content',
-    '@nuxtjs/axios',
-  ],
+  modules: ['@nuxtjs/axios', '@nuxtjs/pwa', '@nuxt/content', '@nuxtjs/axios'],
 
   buildModules: ['@nuxt/image'],
 
@@ -41,4 +33,6 @@ export default {
         ? 'https://stephenlai-portfolio.netlify.app/'
         : 'http://localhost:3000',
   },
+
+  serverMiddleware: ['~/api'],
 }

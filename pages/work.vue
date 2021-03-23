@@ -9,16 +9,28 @@
         <img class="project-image" :src="item.image" alt="work image" />
         <h3 class="project-title">{{ item.title }}</h3>
       </div>
-      <!-- <h1 class="content">{{ $t('workTitle') }}</h1> -->
     </div>
   </div>
 </template>
 
 <script>
-// what is wrong with this fetch ???
 export default {
+   head() {
+    return {
+      title: this.$i18n.t('workHead'),
+      meta: [
+        {
+          name: '',
+          content: ''
+        }
+      ]
+
+    }
+  },
   async asyncData({ $axios }) {
-    const work = await $axios.$get(process.env.baseURL + '/work.json')
+    // const work = await $axios.$get(process.env.baseURL + '/work.json')
+    const work = await $axios.$get(process.env.baseURL + '/api')
+    // const work = await $axios.$get('/api')
     console.log(work)
     return { work }
   }

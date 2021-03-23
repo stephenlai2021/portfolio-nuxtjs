@@ -5,7 +5,9 @@
     <NuxtLink to="/about">{{ $t('navbarAbout') }}</NuxtLink>
     <NuxtLink to="/work">{{ $t('navbarWork') }}</NuxtLink>
     <NuxtLink to="/contact">{{ $t('navbarContact') }}</NuxtLink>
-    <LangSwitcher />
+    <div class="lang-switch">
+      <LangSwitcher />
+    </div>
     <div class="switch">
       <ModeSwitcher />
     </div>
@@ -51,10 +53,14 @@ select {
   margin: 10px;
   padding: 5px;
 }
+.lang-switch {
+  display: flex;
+  justify-content: center;
+}
 .switch {
   margin: 10px;
-  /* display: flex;
-  justify-content: center; */
+  display: flex;
+  justify-content: center;
 }
 a {
   text-decoration: none;
@@ -63,6 +69,7 @@ a {
   color: #707070;
   font-weight: 500;
   border-bottom: 1px solid #f2f3f3;
+  text-align: center;
 }
 a.nuxt-link-exact-active {
   color: var(--primary);

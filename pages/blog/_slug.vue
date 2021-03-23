@@ -31,9 +31,24 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: '',
+      meta: [
+        {
+          name: '',
+          content: ''
+        }
+      ]
+
+    }
+  },
+  // async mounted({ $content }) {
+  //   const post = await $content('posts', this.$route.slug).fetch()
+  //   this.post = post
+  // },
   async asyncData({ $content, params }) {
     const post = await $content('posts', params.slug).fetch()
-
     return { post }
   }
 }
@@ -44,16 +59,17 @@ export default {
   font-size: 18px;
   margin-bottom: 10px;
   font-weight: 300;
-  color: var(--lighter);
+  color: var(--light-500);
 }
 .post-title {
   font-size: 30px;
   font-weight: 400;
+  margin: 0 0 8px;
   color: var(--primary);
 }
 .post-date {
   font-size: 18px;
-  color: var(--light);
+  color: var(--light-300);
   margin-bottom: 20px;
   font-weight: 300;
   display: flex;

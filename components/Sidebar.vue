@@ -156,11 +156,11 @@ a {
   }
   button {
     display: block;
-    height: 40px;
-    padding: 0 30px;
+    height: 50px;
+    padding: 0 50px;
     border-radius: 30px;
     border: 2px solid var(--primary);
-    font-size: 14px;
+    font-size: 18px;
     background: white;
     color: var(--primary);
     font-weight: 300;
@@ -202,6 +202,11 @@ a {
   .subtitle {
     font-size: 16px;
   }
+  button {
+    height: 40px;
+    padding: 0 30px;
+    font-size: 14px;
+  }
 }
 @media (max-width: 575px) {
   .avatar {
@@ -227,6 +232,10 @@ a {
   }
   .subtitle {
     font-size: 13px;
+  }
+  button {
+    padding: 0 18px;
+    height: 36px;
   }
 }
 </style>

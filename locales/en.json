@@ -1,4 +1,10 @@
 {
+  "homeHead": "Stephenlai's Portfolio",
+  "blogSectionTitle": "Latest articles on web development",
+  "blogHead": "Blog",
+  "aboutHead": "About Me",
+  "worktHead": "My Work",
+  "contactHead": "Contact Me",
   "homepage": "Home page",
   "optionText": "Select",
   "option": "English",

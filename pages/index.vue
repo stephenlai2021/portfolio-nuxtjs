@@ -20,6 +20,18 @@
 <script>
 export default {
   layout: 'home',
+  head() {
+    return {
+      title: this.$i18n.t('homeHead'),
+      meta: [
+        {
+          name: '',
+          content: ''
+        }
+      ]
+
+    }
+  },
   async asyncData({ $content }) {
     const posts = await $content('posts').fetch()
 
