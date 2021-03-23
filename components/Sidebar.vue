@@ -17,7 +17,8 @@
     <ul>
       <li>
         <a href="/">
-          <img class="icon" src="/images/location.png" alt="location icon" />
+          <!-- <img class="icon" src="/images/location.png" alt="location icon" /> -->
+          <img class="icon icon-flag" src="/images/flag.jpg" alt="location icon" />
           <span class="info">{{ $t('sidebarLocation') }}</span>
         </a>
       </li>
@@ -109,9 +110,10 @@ a {
 .icon {
   margin-right: 15px;
 }
-.icon-location {
-  width: 25px;
-  height: 25px;
+.icon-flag {
+  border-radius: 0;
+  /* width: 25px; */
+  /* height: 25px; */
 }
 .info {
   font-size: 20px;
