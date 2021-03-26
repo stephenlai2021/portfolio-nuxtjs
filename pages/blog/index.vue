@@ -31,6 +31,9 @@ export default {
     const posts = await $content('posts').fetch()
 
     return { posts }
+  },
+   created() {
+    this.$store.commit('closeDropdown')
   }
 }
 </script>

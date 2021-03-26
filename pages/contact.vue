@@ -69,6 +69,9 @@ export default {
       this.email = ''
       this.message = ''
     },
+  },
+   created() {
+    this.$store.commit('closeDropdown')
   }
 }
 </script>

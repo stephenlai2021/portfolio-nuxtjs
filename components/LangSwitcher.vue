@@ -19,8 +19,6 @@ export default {
   },
   methods: {
     setLang(value) {
-      // console.log(`lang: ${value}`)
-
       this.$store.commit('setLang', value)
       this.$i18n.locale = value
 
@@ -28,6 +26,8 @@ export default {
         localStorage.setItem('lang', value)
       }
 
+      this.$store.commit('closeDropdown')
+      
       console.log(`store: ${this.$store.state.lang}`)
       console.log(`localStore: ${localStorage.getItem('lang')}`)
     },

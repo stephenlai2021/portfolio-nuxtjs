@@ -65,7 +65,7 @@ select {
 a {
   text-decoration: none;
   padding: 10px;
-  width: 150px;
+  width: 130px;
   color: #707070;
   font-weight: 500;
   border-bottom: 1px solid #f2f3f3;

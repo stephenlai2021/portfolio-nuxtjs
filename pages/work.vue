@@ -24,7 +24,6 @@ export default {
           content: ''
         }
       ]
-
     }
   },
   async asyncData({ $axios }) {
@@ -33,6 +32,9 @@ export default {
     // const work = await $axios.$get('/api')
     console.log(work)
     return { work }
+  },
+   created() {
+    this.$store.commit('closeDropdown')
   }
 }
 </script>

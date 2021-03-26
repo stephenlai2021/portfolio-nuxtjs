@@ -5,9 +5,9 @@
       <h2 class="skills">
         <span class="title-1">VueJS,</span>
         <span class="title-2">ReactJS,</span>
-        <span class="title-3">NodeJS,</span>
-        <span class="title-4">Serverless,</span>
-        <span class="title-5">Database</span>
+        <span class="title-3">SvelteJS</span>
+        <span class="title-4">NodeJS,</span>
+        <span class="title-5">Firebase</span>
       </h2>
       <button class="btn-work" @click="$router.push('/work')">
         {{ $t('heroBtnWork') }}
@@ -49,13 +49,13 @@ span {
   color: var(--react-blue);
 }
 .title-3 {
-  color: var(--node-red);
+  color: #ff3e00;
 }
 .title-4 {
-  color: var(--fb-yellow);
+  color: #7FBD42;
 }
 .title-5 {
-  color: var(--mongo-green);
+  color: #F7C52C;
 }
 h2 {
   margin-bottom: 30px;

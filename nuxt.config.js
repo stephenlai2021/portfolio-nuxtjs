@@ -19,7 +19,13 @@ export default {
 
   modules: ['@nuxtjs/axios', '@nuxtjs/pwa', '@nuxt/content', '@nuxtjs/axios'],
 
-  buildModules: ['@nuxt/image'],
+  buildModules: [
+    '@aceforth/nuxt-optimized-images',
+  ],
+
+  optimizedImages: {
+    optimizeImages: true
+  },
 
   pwa: {
     manifest: {

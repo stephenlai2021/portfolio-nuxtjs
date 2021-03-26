@@ -26,6 +26,9 @@ export default {
       ],
     }
   },
+   created() {
+    this.$store.commit('closeDropdown')
+  }
 }
 </script>
 
