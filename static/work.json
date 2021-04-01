@@ -1,13 +1,13 @@
 [
   {
     "id": 1,
-    "title": "Weather App",
-    "image": "/workpage/weather-app.png"
+    "title": "MERN Ecommerce",
+    "image": "/workpage/ecommerce.png"
   },
   {
     "id": 2,
-    "title": "MERN Ecommerce",
-    "image": "https://miro.medium.com/max/2028/1*VDsw4qpg3vgP9ccHyozQMA.png"
+    "title": "Weather App",
+    "image": "/workpage/weather-app.png"
   },
   {
     "id": 3,
