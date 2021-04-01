@@ -15,6 +15,9 @@
 
 <script>
 export default {
+  setup() {
+    
+  },
    head() {
     return {
       title: this.$i18n.t('workHead'),
