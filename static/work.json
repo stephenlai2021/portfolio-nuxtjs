@@ -6,12 +6,12 @@
   },
   {
     "id": 2,
-    "title": "Weather App",
-    "image": "/workpage/weather-app.png"
+    "title": "Svelte Ecommerce",
+    "image": "/workpage/razor-ecommerce.png"
   },
   {
     "id": 3,
-    "title": "Photo Message",
-    "image": "/workpage/razor-ecommerce.png"
-  }
+    "title": "Weather App",
+    "image": "/workpage/weather-app.png"
+  },
 ]
