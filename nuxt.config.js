@@ -36,7 +36,7 @@ export default {
   env: {
     baseURL:
       process.env.NODE_ENV === 'production'
-        ? 'https://my-portfolio-nuxt.netlify.app/'
+        ? 'https://nuxtjs-portfolio.netlify.app/'
         : 'http://localhost:3000',
   },
 
