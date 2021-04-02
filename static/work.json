@@ -1,17 +1,27 @@
 [
   {
     "id": 1,
-    "title": "MERN Ecommerce",
-    "image": "/workpage/ecommerce.png"
+    "title": "Proshop Ecommerce",
+    "image": "/workpage/ecommerce-1.png"
   },
   {
     "id": 2,
-    "title": "Svelte Ecommerce",
-    "image": "/workpage/razor-ecommerce.png"
+    "title": "Razor Ecommerce",
+    "image": "/workpage/ecommerce-2.png"
   },
   {
     "id": 3,
+    "title": "Grocery Mobile App UI",
+    "image": "/workpage/grocery.png"
+  },
+  {
+    "id": 4,
+    "title": "Portfolio",
+    "image": "/workpage/portfolio.png"
+  },
+  {
+    "id": 5,
     "title": "Weather App",
-    "image": "/workpage/weather-app.png"
+    "image": "/workpage/weather.png"
   }
 ]

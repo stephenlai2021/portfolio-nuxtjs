@@ -1,5 +1,4 @@
 <template>
-  <!-- hi, there !  -->
   <article>
     <div class="post" v-for="post in posts" :key="post.title">
       <NuxtLink :to="`/blog/${post.slug}`">
