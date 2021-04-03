@@ -6,8 +6,10 @@
     </h2>
     <div class="project-container">
       <div class="project" v-for="item in work" :key="item.id">
-        <img class="project-image" :src="item.image" alt="work image" />
-        <h3 class="project-title">{{ item.title }}</h3>
+        <NuxtLink :to="`/work/${item.id}`">
+          <img class="project-image" :src="item.image" alt="work image" />
+          <h3 class="project-title">{{ item.title }}</h3>
+        </NuxtLink>
       </div>
     </div>
   </div>
@@ -15,30 +17,42 @@
 
 <script>
 export default {
-  setup() {
-    
-  },
-   head() {
+  setup() {},
+  head() {
     return {
       title: this.$i18n.t('workHead'),
       meta: [
         {
           name: '',
-          content: ''
-        }
-      ]
+          content: '',
+        },
+      ],
     }
   },
   async asyncData({ $axios }) {
-    const work = await $axios.$get(process.env.baseURL + '/work.json')
     // const work = await $axios.$get(process.env.baseURL + '/api')
     // const work = await $axios.$get('/api')
-    console.log(work)
+
+    // const work = await $axios.$get(process.env.baseURL + '/work.json')
+
+    const res = await fetch(
+      'https://my-portfolio-work-page-default-rtdb.firebaseio.com/work.json'
+    )
+    const data = await res.json()
+
+    const work = []
+    for (const key in data) {
+      work.push({
+        id: key,
+        image: data[key].image,
+        title: data[key].title,
+      })
+    }
     return { work }
   },
-   created() {
+  created() {
     this.$store.commit('closeDropdown')
-  }
+  },
 }
 </script>
 
